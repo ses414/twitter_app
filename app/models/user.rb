@@ -10,5 +10,5 @@ class User < ApplicationRecord
  					validates :username, presence: true
   				validates :username, uniqueness: true
 
-  				serialize :following 
+  				serialize :following, Array
 end
